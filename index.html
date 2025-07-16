@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Travel E-Commerce</title>
+
+  <!-- css link -->
+  <link rel="stylesheet" href="style.css"/>
+
+  <!-- fonts link -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
+
+  <!-- icons link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- header section -->
+
+   <!-- header section -->
+  <header>
+    <div class="container header-container">
+      <h1>Wanderlust</h1>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+        <a href="javascript:void(0)" class="cart-icon" onclick="toggleCart()">
+          <i class="fas fa-shopping-cart"></i>
+          <span id="cart-count">0</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- hidden cart popup -->
+  <div id="cart-popup" class="cart-popup hidden">
+    <h3>Your Cart (<span id="cart-count-popup">0</span> items)</h3>
+    <ul id="cart-items"></ul>
+  </div>
+
+  <!-- hero section -->
+  <section class="hero" id="home">
+    <div class="container">
+      <h2>Explore the world with us</h2>
+      <p>Discover breathtaking destinations & book your next adventure</p>
+      <a href="#shop" class="btn">Book Now</a>
+    </div>
+  </section>
+
+  <!-- shop section -->
+  <section id="shop" class="shop-section">
+    <div class="container">
+      <h2>Top Destinations</h2>
+      <div class="products">
+        <div class="card">
+          <img src="./images/paris.jpg" alt="Paris"/>
+          <h3>Paris</h3>
+          <p>₹75,000 - 5 Nights</p>
+          <button onclick="addToCart('Paris')">Add to Cart</button>
+        </div>
+        <div class="card">
+          <img src="./images/Maldives.jpg" alt="Maldives"/>
+          <h3>Maldives</h3>
+          <p>₹90,000 - 4 Nights</p>
+          <button onclick="addToCart('Maldives')">Add to Cart</button>
+        </div>
+        <div class="card">
+          <img src="./images/bali.jpg" alt="Bali"/>
+          <h3>Bali</h3>
+          <p>₹70,000 - 6 Nights</p>
+          <button onclick="addToCart('Bali')">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- blog section -->
+  <section id="blog" class="blog-section">
+    <div class="container">
+      <h2>Travel Stories</h2>
+      <div class="blog-posts">
+        <div class="post">
+          <img src="./images/Mountains.jpg" alt="Mountains"/>
+          <h3>Himalayan Adventures</h3>
+          <p>A breathtaking trek through the snowy peaks of Nepal.</p>
+        </div>
+        <div class="post">
+          <img src="./images/Desert.jpg" alt="Desert"/>
+          <h3>Sahara Expedition</h3>
+          <p>Experience the vast silence and starry skies of the Sahara desert.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- contact section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form id="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <input type="text" name="password" placeholder="Your password" required />
+        <button type="submit">Submit</button>
+      </form>
+
+      <div class="social-icons">
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Wanderlust Travel Co. | Contact: info@wanderlust.com</p>
+    </div>
+  </footer>
+
+  <!-- script -->
+  
+  <!-- script -->
+
+  <script src="script.js"></script>
+
+</body>
+</html>
